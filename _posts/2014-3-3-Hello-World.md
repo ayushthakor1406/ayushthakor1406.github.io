@@ -27,9 +27,9 @@ Before you begin, ensure that you have the following installed:
 ## Deployment Steps
 1. Create Network
    - Navigate to the project directory
-   - ```bash
+      ```bash
      docker network create my-network
-     ```
+      ```
      ![Alt Text](https://raw.githubusercontent.com/ayushthakor1406/ayushthakor1406.github.io/master/images/network_create.png)
 2. MySQL Database:
 
