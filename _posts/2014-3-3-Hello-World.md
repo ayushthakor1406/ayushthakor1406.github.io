@@ -89,7 +89,7 @@ Before you begin, ensure that you have the following installed:
      ![Alt Text](https://raw.githubusercontent.com/ayushthakor1406/ayushthakor1406.github.io/master/images/frontend_container.png)
 4. Access the Application:
 
-   Open your favorite browser and visit [http://localhost:80](http://localhost:3000). Enjoy exploring the MERN stack application!
+   Open your favorite browser and visit [http://localhost:3000](http://localhost:3000). Enjoy exploring the MERN stack application!
    ![Alt Text](https://raw.githubusercontent.com/ayushthakor1406/ayushthakor1406.github.io/master/images/dashboard.png)
 
     
