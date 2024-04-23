@@ -35,21 +35,21 @@ Before you begin, ensure that you have the following installed:
 
    - Navigate to the mysql directory.
    - Build the MySQL Docker image:
-     bash
+     ```bash
      docker build -t mysql-image .
-     
+     ```
      
      ![Alt Text](https://raw.githubusercontent.com/ayushthakor1406/ayushthakor1406.github.io/master/images/mysql_img.png)
      
    - Run the MySQL container:
-     bash
+     ```bash
      docker run --name mysql-container --network=three-tier-network -p 3306:3306 -v mysql-data:/var/lib/mysql -d mysql-image
-     
+     ```
      ![Alt Text](https://raw.githubusercontent.com/ayushthakor1406/ayushthakor1406.github.io/master/images/mysql_container.png)
    - Access the MySQL container:
-     bash
+     ```bash
      docker exec -it mysql-container /bin/bash
-     
+     ```
    - Inside the container, create tables for the database:
      sql
      ![Alt Text]
@@ -65,27 +65,27 @@ Before you begin, ensure that you have the following installed:
 
    - Navigate to the backend directory.
    - Build the backend Docker image:
-     bash
+     ```bash
      docker build -t backend .
-     
+     ```
      ![Alt Text](https://raw.githubusercontent.com/ayushthakor1406/ayushthakor1406.github.io/master/images/backend_img.png)
    - Run the backend container:
-     bash
+     ```bash
      docker run -d -p 3500:3500 --name backend-container --network=three-tier-network backend
-     
+     ```
      ![Alt Text](https://raw.githubusercontent.com/ayushthakor1406/ayushthakor1406.github.io/master/images/backend_container.png)
 3. Frontend Application:
 
    - Navigate to the frontend directory.
    - Build the frontend Docker image:
-     bash
+     ```bash
      docker build -t frontend .
-     
+     ```
      ![Alt Text](https://raw.githubusercontent.com/ayushthakor1406/ayushthakor1406.github.io/master/images/frontend_img.png)
    - Run the frontend container:
-     bash
+     ```bash
      docker run -d --name frontend-container --network=three-tier-network -p 80:80 frontend
-     
+     ```
      ![Alt Text](https://raw.githubusercontent.com/ayushthakor1406/ayushthakor1406.github.io/master/images/frontend_container.png)
 4. Access the Application:
 
